@@ -12,7 +12,7 @@
         <?php
         $text = '    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit labore velit deleniti, exercitationem, fuga hic quae obcaecati eum consequuntur ipsa ex necessitatibus aliquam modi nihil facilis alias ratione est similique.';
         $length = strlen($text) ;
-        $paragrafer= $text . ' Length = ' . $length . ' characters';
+        $paragrafer= $text . ' Text length = ' . $length . ' characters.';
         echo $paragrafer
         ?>
     </h1>
@@ -21,7 +21,6 @@
     <!-- nasconde le parole dell'utente -->
     <h2>
         <?php
-            $hiddenWord = '';
             $result= str_replace($_GET['hiddenWord'],"***", $paragrafer);
             echo $result
         ?>
